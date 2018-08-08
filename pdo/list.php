@@ -31,8 +31,8 @@ $query->execute();
           <td><?php echo $row->status ?></td>
           <td>
             <a href="view.php?id=<?php echo $row->id ?>">view</a> |
-            <a href="edit-form.php?id=<?php echo $row->id ?>">edit</a> | 
-            delete </td>
+            <a href="edit-form.php?id=<?php echo $row->id ?>">edit</a> |
+            <a href="delete.php?id=<?php echo $row->id ?>" onclick="if(!confirm('กรุณายืนยันการลบข้อมูล')) { return false; }">delete</a></td>
         </tr>
         <?php } ?>
       </tbody>
