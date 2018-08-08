@@ -29,7 +29,10 @@ $query->execute();
           <td><?php echo $row->id ?></td>
           <td><?php echo $row->firstname ?></td>
           <td><?php echo $row->status ?></td>
-          <td> <a href="view.php?id=<?php echo $row->id ?>">view</a> | edit | delete </td>
+          <td>
+            <a href="view.php?id=<?php echo $row->id ?>">view</a> |
+            <a href="edit-form.php?id=<?php echo $row->id ?>">edit</a> | 
+            delete </td>
         </tr>
         <?php } ?>
       </tbody>
