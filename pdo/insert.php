@@ -22,6 +22,7 @@ $result = $query->execute([
       echo "Successfully";
     }else{
       echo "Save fail!";
+      print_r($query->errorInfo())
     }
     ?>
   </body>
